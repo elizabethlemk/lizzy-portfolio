@@ -28,7 +28,7 @@ class App extends React.Component {
     console.log(this.state);
     return (
       <div id="window">
-        <Sparkle overflowPx={100} />
+        <Sparkle />
         <Container textAlign="center" id="main-container">
           <Logo handleItemClick={this.handleItemClick} />
           <NavBar handleItemClick={this.handleItemClick} />
