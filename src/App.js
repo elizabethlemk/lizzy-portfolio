@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Container } from "semantic-ui-react";
+import { Route, withRouter } from "react-router-dom";
+import Logo from "./Logo";
+import NavBar from "./NavBar";
+import About from "./About";
+import Home from "./Home";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  componentDidMount = () => {
+    this.props.history.push("/home");
+  };
+  render() {
+    return (
+      <Container textAlign="center" id="main-container">
+        <Route exact path="/home" component={Home} />
+        <Logo />
+        <NavBar />
+
+        <Route exact path="/about" component={About} />
+        <Route exact path="/projects" component={About} />
+        <Route exact path="/blog" component={About} />
+        <Route exact path="/contact" component={About} />
+      </Container>
+    );
+  }
 }
 
-export default App;
+export default withRouter(App);
