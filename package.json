@@ -10,6 +10,7 @@
     "react-scripts": "3.0.0",
     "react-sparkle": "^1.0.4",
     "react-spring": "^8.0.19",
+    "react-typist": "^2.0.5",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.86.0"
   },
