@@ -11,6 +11,7 @@ import Home from "./Home";
 import Projects from "./Projects";
 import Blog from "./Blog";
 import Contact from "./Contact";
+import Social from "./Social";
 
 class App extends React.Component {
   state = {
@@ -110,6 +111,8 @@ class App extends React.Component {
               ))
             }
           </Transition>
+
+          <Social />
         </Container>
       </div>
     );

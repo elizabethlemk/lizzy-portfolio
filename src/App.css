@@ -101,6 +101,20 @@ body {
   margin-bottom: 0;
 }
 
+#social {
+  position: absolute;
+  bottom: 15%;
+  z-index: 0;
+}
+
+#social a {
+  text-decoration: none;
+  color: black;
+}
+#social a:hover {
+  color: #fff;
+}
+
 #window {
   width: 100vw;
   height: 100vh;

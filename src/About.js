@@ -43,7 +43,7 @@ const About = () => {
                 <h5 className="school">Flatiron School </h5>
                 January - April 2019
                 <li>Brooklyn, NY</li>
-                <li>Immersive 15 weeks program full-stack development</li>
+                <li>Immersive 15 weeks program full stack development</li>
               </ul>
             </li>
             <br />
