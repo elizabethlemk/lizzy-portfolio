@@ -1,7 +1,5 @@
 import React from "react";
 import { Divider, Grid, Header, Image, Segment } from "semantic-ui-react";
-import { Document } from "react-pdf";
-import { Spring } from "react-spring/renderprops";
 
 const About = () => {
   return (

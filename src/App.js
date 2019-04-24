@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css";
 import { Container } from "semantic-ui-react";
 import Sparkle from "react-sparkle";
-import { Transition, animated } from "react-spring/renderprops";
-import { Route, withRouter } from "react-router-dom";
+import { Transition } from "react-spring/renderprops";
+import { withRouter } from "react-router-dom";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
 import About from "./About";
@@ -31,7 +31,10 @@ class App extends React.Component {
         <Sparkle />
         <Container textAlign="center" id="main-container">
           <Logo handleItemClick={this.handleItemClick} />
-          <NavBar handleItemClick={this.handleItemClick} />
+          <NavBar
+            handleItemClick={this.handleItemClick}
+            activeItem={this.state.activeItem}
+          />
           <Transition
             items={this.state.activeItem === "home"}
             from={{ opacity: 0 }}

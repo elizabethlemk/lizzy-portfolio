@@ -1,5 +1,4 @@
 import React from "react";
-import { Link, withRouter } from "react-router-dom";
 import Typist from "react-typist";
 
 class Home extends React.Component {
@@ -20,4 +19,4 @@ class Home extends React.Component {
   }
 }
 
-export default withRouter(Home);
+export default Home;
