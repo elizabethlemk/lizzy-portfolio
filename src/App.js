@@ -9,7 +9,7 @@ import NavBar from "./NavBar";
 import About from "./About";
 import Home from "./Home";
 import Projects from "./Projects";
-import Blog from "./Blog";
+import Resume from "./Resume";
 import Contact from "./Contact";
 import Social from "./Social";
 
@@ -20,9 +20,11 @@ class App extends React.Component {
   componentDidMount = () => {
     this.props.history.push("/home");
   };
+
   handleItemClick = (e, { name }) => {
     e.preventDefault();
     this.setState({ activeItem: name });
+    this.props.history.push(`/${name}`);
   };
 
   render() {
@@ -67,7 +69,7 @@ class App extends React.Component {
             }
           </Transition>
           <Transition
-            items={this.state.activeItem === "blog"}
+            items={this.state.activeItem === "resume"}
             from={{ opacity: 0, transform: "translateY(100px)" }}
             enter={{ opacity: 1, transform: "translateY(0px)" }}
             leave={{ opacity: 0, transform: "translateY(100px)" }}
@@ -76,7 +78,7 @@ class App extends React.Component {
               show &&
               (props => (
                 <div style={props}>
-                  <Blog />
+                  <Resume />
                 </div>
               ))
             }
