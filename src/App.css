@@ -24,6 +24,38 @@ body {
   background-size: cover;
 }
 
+.contact-form {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin: auto;
+}
+
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form a {
+  width: 500px;
+  display: block;
+  margin: 1rem auto;
+}
+
+.contact-form a {
+  background-color: black;
+  color: white;
+  font-family: orator-std, monospace !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  letter-spacing: 0.3rem !important;
+  font-size: 15px;
+}
+
+#contact-header {
+  font-family: orator-std, monospace !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  letter-spacing: 0.3rem !important;
+  font-size: 30px;
+}
+
 #home-container {
   font-family: orator-std, monospace;
   font-weight: 400;
