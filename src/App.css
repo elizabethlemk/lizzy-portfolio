@@ -22,7 +22,7 @@
     width: 100vw;
     height: 100vh;
     background: url("./images/background.png");
-    position: absolute;
+    background-position: center;
     background-size: cover;
   }
   .contact-form {
@@ -61,10 +61,11 @@
     font-family: orator-std, monospace;
     font-weight: 400;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     position: absolute;
-    top: 37%;
-    left: 32%;
+    width: 50%;
+    top: 27%;
+    left: 24%;
   }
 
   #logo {
@@ -74,7 +75,7 @@
     color: #fff;
     font-size: 7rem;
     position: relative;
-    padding: 10rem 0 10rem 0 !important;
+    padding: 10rem 0 0rem 0 !important;
     margin: 20rem 0 20rem 0 !important;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -85,13 +86,16 @@
   }
 
   #navbar {
+    position: absolute;
+    bottom: 18%;
+    left: 23%;
     font-family: orator-std, monospace !important;
     font-weight: 400 !important;
     font-style: normal !important;
     letter-spacing: 0.3rem !important;
     font-size: 15px;
     max-width: 50%;
-    margin: 2rem 25% !important;
+    /* margin: 1rem 25% !important; */
   }
   .school {
     margin-top: 5rem;
@@ -143,9 +147,9 @@
     width: 100vw;
     height: 100vh;
     background: url("./images/responsive.png");
-    position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
   }
   .contact-form {
     padding-top: 1rem;
@@ -195,7 +199,7 @@
     font-size: 3rem;
     position: relative;
     padding: 10rem 0 10rem 0 !important;
-    margin: 20rem 0 20rem 0 !important;
+    margin: 20rem 0 17rem 0 !important;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
@@ -210,7 +214,7 @@
     letter-spacing: 0.1rem !important;
     font-size: 0.5rem;
     max-width: 50%;
-    margin: 1rem 25% !important;
+    margin: 0rem 25% !important;
   }
 
   .school {
@@ -266,7 +270,7 @@
 }
 
 #main-container {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 #window {
