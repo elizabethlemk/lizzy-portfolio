@@ -4,7 +4,7 @@ import { Embed, Grid, Image, Modal, Segment } from "semantic-ui-react";
 export default class Projects extends React.Component {
   render() {
     return (
-      <Grid style={{ zIndex: "2" }} columns={3} centered>
+      <Grid style={{ zIndex: "2" }} columns={3} centered id="project-container">
         <Grid.Column>
           <Segment textAlign="center">
             Project Book

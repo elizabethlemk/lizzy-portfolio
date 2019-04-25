@@ -2,85 +2,236 @@
 @import url("https://use.typekit.net/hqo7xxg.css");
 @import url("https://use.typekit.net/hqo7xxg.css");
 
-#about ul {
-  padding: 0;
-  margin: 0;
-}
-#about li {
-  list-style: none;
+@media (min-width: 500px) {
+  #about ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  #about li {
+    list-style: none;
+  }
+
+  .about-header {
+    letter-spacing: 1rem !important;
+    text-transform: uppercase !important;
+  }
+
+  body {
+    /* Image credit to https://unsplash.com/@designecologist */
+    width: 100vw;
+    height: 100vh;
+    background: url("./images/background.png");
+    position: absolute;
+    background-size: cover;
+  }
+  .contact-form {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin: auto;
+  }
+
+  .contact-form input[type="email"],
+  .contact-form textarea,
+  .contact-form a {
+    width: 500px;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .contact-form a {
+    background-color: black;
+    color: white;
+    font-family: orator-std, monospace !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    letter-spacing: 0.3rem !important;
+    font-size: 15px;
+  }
+
+  #contact-header {
+    font-family: orator-std, monospace !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    letter-spacing: 0.3rem !important;
+    font-size: 30px;
+  }
+
+  #home-container {
+    font-family: orator-std, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 37%;
+    left: 32%;
+  }
+
+  #logo {
+    font-family: marydale, sans-serif !important;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    font-size: 7rem;
+    position: relative;
+    padding: 10rem 0 10rem 0 !important;
+    margin: 20rem 0 20rem 0 !important;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+
+  #navbar {
+    font-family: orator-std, monospace !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    letter-spacing: 0.3rem !important;
+    font-size: 15px;
+    max-width: 50%;
+    margin: 2rem 25% !important;
+  }
+  .school {
+    margin-top: 5rem;
+    margin-bottom: 0;
+  }
+  #social {
+    position: absolute;
+    bottom: 15%;
+    z-index: 0;
+  }
+
+  #social a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #social a:hover {
+    color: #fff;
+  }
 }
 
-.about-header {
-  letter-spacing: 1rem !important;
-  text-transform: uppercase !important;
-}
+@media (max-width: 500px) {
+  #about,
+  #project-container,
+  #resume,
+  #contact-container {
+    margin-top: 20%;
+    font-size: 0.6rem;
+  }
 
-body {
-  /* Image credit to https://unsplash.com/@designecologist */
-  width: 100vw;
-  height: 100vh;
-  background: url("./images/background.png");
-  position: fixed;
-  background-size: cover;
-}
+  #about ul {
+    padding: 0;
+    margin: 0;
+  }
 
-.contact-form {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  margin: auto;
-}
+  #about li {
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 
-.contact-form input[type="email"],
-.contact-form textarea,
-.contact-form a {
-  width: 500px;
-  display: block;
-  margin: 1rem auto;
-}
+  .about-header {
+    font-size: 1rem !important;
+    letter-spacing: 0.3rem !important;
+    text-transform: uppercase !important;
+  }
+  body {
+    /* Image credit to https://unsplash.com/@designecologist */
+    width: 100vw;
+    height: 100vh;
+    background: url("./images/responsive.png");
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .contact-form {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin: auto;
+  }
 
-.contact-form a {
-  background-color: black;
-  color: white;
-  font-family: orator-std, monospace !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
-  letter-spacing: 0.3rem !important;
-  font-size: 15px;
-}
+  .contact-form input[type="email"],
+  .contact-form textarea,
+  .contact-form a {
+    width: 70vw;
+    display: block;
+    margin: 1rem auto;
+  }
 
-#contact-header {
-  font-family: orator-std, monospace !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
-  letter-spacing: 0.3rem !important;
-  font-size: 30px;
-}
+  .contact-form a {
+    background-color: black;
+    color: white;
+    font-family: orator-std, monospace !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    letter-spacing: 0.3rem !important;
+    font-size: 10px;
+  }
 
-#home-container {
-  font-family: orator-std, monospace;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2.5rem;
-  position: absolute;
-  top: 37%;
-  left: 32%;
-}
+  #contact-header {
+    font-family: orator-std, monospace !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    letter-spacing: 0.1rem !important;
+    font-size: 20px;
+  }
+  #home-container {
+    font-family: orator-std, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    position: absolute;
+    top: 38%;
+    left: 32%;
+  }
+  #logo {
+    font-family: marydale, sans-serif !important;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    font-size: 3rem;
+    position: relative;
+    padding: 10rem 0 10rem 0 !important;
+    margin: 20rem 0 20rem 0 !important;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+  #navbar {
+    font-family: orator-std, monospace !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    letter-spacing: 0.1rem !important;
+    font-size: 0.5rem;
+    max-width: 50%;
+    margin: 1rem 25% !important;
+  }
 
-#logo {
-  font-family: marydale, sans-serif !important;
-  font-weight: 700;
-  font-style: normal;
-  color: #fff;
-  font-size: 7rem;
-  position: relative;
-  padding: 10rem 0 10rem 0 !important;
-  margin: 20rem 0 20rem 0 !important;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
+  .school {
+    font-size: 0.8rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  #social {
+    position: absolute;
+    top: 18%;
+    left: 27%;
+    z-index: 0;
+  }
+
+  #social a {
+    text-decoration: none;
+    color: black;
+  }
+  #social a:hover {
+    color: #fff;
+  }
 }
 
 @-webkit-keyframes neon1 {
@@ -116,35 +267,6 @@ body {
 
 #main-container {
   margin-top: 3rem;
-}
-
-#navbar {
-  font-family: orator-std, monospace !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
-  letter-spacing: 0.3rem !important;
-  font-size: 15px;
-  max-width: 50%;
-  margin: 2rem 25% !important;
-}
-
-.school {
-  margin-top: 5rem;
-  margin-bottom: 0;
-}
-
-#social {
-  position: absolute;
-  bottom: 15%;
-  z-index: 0;
-}
-
-#social a {
-  text-decoration: none;
-  color: black;
-}
-#social a:hover {
-  color: #fff;
 }
 
 #window {

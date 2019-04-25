@@ -5,7 +5,7 @@ import ReactContactForm from "react-mail-form";
 export default class Contact extends React.Component {
   render() {
     return (
-      <Segment textAlign="center">
+      <Segment textAlign="center" id="contact-container">
         <Header style={{ marginTop: "2rem" }} id="contact-header">
           To: elizabethlemk@gmail.com
         </Header>

@@ -11,7 +11,7 @@ export default class Resume extends React.Component {
   render() {
     const { pageNumber, numPages } = this.state;
     return (
-      <Segment>
+      <Segment id="resume">
         <Document file={resume} onLoadSuccess={this.onDocumentLoadSuccess}>
           <Page pageNumber={pageNumber} width={600} />
         </Document>

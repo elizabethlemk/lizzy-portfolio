@@ -14,7 +14,7 @@ const About = () => {
         <Grid.Column width={6}>
           <Image src="https://i.imgur.com/4Y3dLBk.png" fluid />
         </Grid.Column>
-        <Grid.Column width={10} style={{ lineHeight: "1.6rem" }}>
+        <Grid.Column width={10}>
           <Divider horizontal>
             <Header className="about-header">Background</Header>
           </Divider>
