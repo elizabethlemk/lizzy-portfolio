@@ -5,7 +5,7 @@ import resume from "./images/resume.pdf";
 const Resume = () => {
   return (
     <Segment id="resume">
-      <iframe src={resume} width="100%" height="500px" title="resume" />
+      <iframe src={resume} title="resume" id="resume-iframe" />
     </Segment>
   );
 };
