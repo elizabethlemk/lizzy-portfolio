@@ -7,11 +7,6 @@ import { withRouter } from "react-router-dom";
 
 import Logo from "./Logo";
 import NavBar from "./NavBar";
-// import About from "./About";
-// import Home from "./Home";
-// import Projects from "./Projects";
-// import Resume from "./Resume";
-// import Contact from "./Contact";
 import Social from "./Social";
 import Load from "./Load";
 
@@ -131,7 +126,6 @@ class App extends React.Component {
               ))
             }
           </Transition>
-
           <Social />
         </Container>
       </div>
