@@ -1,17 +1,25 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./App.css";
 import { Container } from "semantic-ui-react";
 import Sparkle from "react-sparkle";
 import { Transition } from "react-spring/renderprops";
 import { withRouter } from "react-router-dom";
+
 import Logo from "./Logo";
 import NavBar from "./NavBar";
-import About from "./About";
-import Home from "./Home";
-import Projects from "./Projects";
-import Resume from "./Resume";
-import Contact from "./Contact";
+// import About from "./About";
+// import Home from "./Home";
+// import Projects from "./Projects";
+// import Resume from "./Resume";
+// import Contact from "./Contact";
 import Social from "./Social";
+import Load from "./Load";
+
+const Home = React.lazy(() => import("./Home"));
+const About = React.lazy(() => import("./About"));
+const Projects = React.lazy(() => import("./Projects"));
+const Resume = React.lazy(() => import("./Resume"));
+const Contact = React.lazy(() => import("./Contact"));
 
 class App extends React.Component {
   state = {
@@ -31,7 +39,7 @@ class App extends React.Component {
     console.log(this.state);
     return (
       <div id="window">
-        <Sparkle />
+        <Sparkle count={30} />
         <Container textAlign="center" id="main-container">
           <Logo handleItemClick={this.handleItemClick} />
           <NavBar
@@ -48,7 +56,9 @@ class App extends React.Component {
               show &&
               (props => (
                 <div style={props}>
-                  <Home />
+                  <Suspense fallback={<Load />}>
+                    <Home />
+                  </Suspense>
                 </div>
               ))
             }
@@ -63,7 +73,9 @@ class App extends React.Component {
               show &&
               (props => (
                 <div style={props}>
-                  <About />
+                  <Suspense fallback={<Load />}>
+                    <About />
+                  </Suspense>
                 </div>
               ))
             }
@@ -78,7 +90,9 @@ class App extends React.Component {
               show &&
               (props => (
                 <div style={props}>
-                  <Resume />
+                  <Suspense fallback={<Load />}>
+                    <Resume />
+                  </Suspense>
                 </div>
               ))
             }
@@ -93,7 +107,9 @@ class App extends React.Component {
               show &&
               (props => (
                 <div style={props}>
-                  <Projects />
+                  <Suspense fallback={<Load />}>
+                    <Projects />
+                  </Suspense>
                 </div>
               ))
             }
@@ -108,7 +124,9 @@ class App extends React.Component {
               show &&
               (props => (
                 <div style={props}>
-                  <Contact />
+                  <Suspense fallback={<Load />}>
+                    <Contact />
+                  </Suspense>
                 </div>
               ))
             }
