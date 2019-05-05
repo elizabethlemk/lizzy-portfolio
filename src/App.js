@@ -41,6 +41,7 @@ class App extends React.Component {
             handleItemClick={this.handleItemClick}
             activeItem={this.state.activeItem}
           />
+          <Social />
           <Transition
             items={this.state.activeItem === "home"}
             from={{ opacity: 0 }}
@@ -126,7 +127,6 @@ class App extends React.Component {
               ))
             }
           </Transition>
-          <Social />
         </Container>
       </div>
     );

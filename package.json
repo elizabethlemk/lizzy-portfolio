@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "http://elizabethlemk.herokuapp.com/home",
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
