@@ -9,6 +9,7 @@ const About = () => {
         verticalAlign="middle"
         textAlign="center"
         padded
+        stackable
         fluid="true"
       >
         <Grid.Column width={6}>
