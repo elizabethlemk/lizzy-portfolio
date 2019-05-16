@@ -31,7 +31,8 @@ const About = () => {
             <Header className="about-header">Skills</Header>
           </Divider>
           <p>
-            React, Redux, JavaScript, Ruby on Rails, Semantic Ui, Bootstrap{" "}
+            React, Redux, JavaScript, Ruby on Rails, PHP, CMS (Wordpress,
+            Shopify)
             <br />
             CSS, HTML, Illustrator, Photoshop, PostgreSQL, AWS S3
           </p>
