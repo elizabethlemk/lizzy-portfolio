@@ -7,7 +7,7 @@ export default class Projects extends React.Component {
       <Grid
         style={{ zIndex: "2" }}
         stackable
-        columns={3}
+        columns={2}
         centered
         id="project-container"
       >
@@ -35,6 +35,13 @@ export default class Projects extends React.Component {
                   placeholder="https://tinyurl.com/y6oaoylr"
                   source="youtube"
                 />
+                <ul>
+                  <strong>Built With</strong>
+                  <li>Ruby on Rails (Backend)</li>
+                  <li>React.js & Redux.js (Frontend)</li>
+                  <li>Semantic UI React</li>
+                  <li>AWS S3</li>
+                </ul>
               </Modal.Content>
             </Modal>
           </Segment>
@@ -73,6 +80,12 @@ export default class Projects extends React.Component {
                   placeholder="https://tinyurl.com/y5y4fpzd"
                   source="youtube"
                 />
+                <ul>
+                  <strong>Built With</strong>
+                  <li>Ruby on Rails </li>
+                  <li>HTML/CSS</li>
+                  <li>Bootstrap</li>
+                </ul>
               </Modal.Content>
             </Modal>
           </Segment>
@@ -110,6 +123,12 @@ export default class Projects extends React.Component {
                   placeholder="https://tinyurl.com/y2v7bgvf"
                   source="youtube"
                 />
+                <ul>
+                  <strong>Built With</strong>
+                  <li>Ruby on Rails (Backend)</li>
+                  <li>Vanilla Javscript, Phaser.js (Frontend)</li>
+                  <li>HTML/CSS</li>
+                </ul>
               </Modal.Content>
             </Modal>
           </Segment>
@@ -138,38 +157,45 @@ export default class Projects extends React.Component {
                   placeholder="https://tinyurl.com/y2gqllm5"
                   source="youtube"
                 />
+                <ul>
+                  <strong>Built With</strong>
+                  <li>Ruby</li>
+                  <li>SQL</li>
+                </ul>
               </Modal.Content>
             </Modal>
           </Segment>
         </Grid.Column>
-        <Grid.Column>
-          <Segment textAlign="center">
-            InnerMost
-            <Modal
-              closeIcon
-              trigger={<Image src="https://tinyurl.com/yypeg3j3" />}
-            >
-              <Modal.Header>
-                Inner most |{" "}
-                <a
-                  href="https://github.com/csamelian27/Inner-Most"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {" "}
-                  Github
-                </a>
-              </Modal.Header>
-              <Modal.Content>
-                <Embed
-                  id="O6Xo21L0ybE"
-                  placeholder="https://tinyurl.com/yypeg3j3"
-                  source="youtube"
-                />
-              </Modal.Content>
-            </Modal>
-          </Segment>
-        </Grid.Column>
+        {
+          //  <Grid.Column>
+          //   <Segment textAlign="center">
+          //     InnerMost
+          //     <Modal
+          //       closeIcon
+          //       trigger={<Image src="https://tinyurl.com/yypeg3j3" />}
+          //     >
+          //       <Modal.Header>
+          //         Inner most |{" "}
+          //         <a
+          //           href="https://github.com/csamelian27/Inner-Most"
+          //           target="_blank"
+          //           rel="noopener noreferrer"
+          //         >
+          //           {" "}
+          //           Github
+          //         </a>
+          //       </Modal.Header>
+          //       <Modal.Content>
+          //         <Embed
+          //           id="O6Xo21L0ybE"
+          //           placeholder="https://tinyurl.com/yypeg3j3"
+          //           source="youtube"
+          //         />
+          //       </Modal.Content>
+          //     </Modal>
+          //   </Segment>
+          // </Grid.Column>
+        }
       </Grid>
     );
   }
