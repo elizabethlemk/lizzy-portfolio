@@ -1,0 +1,20 @@
+{
+  "short_name": "Elizabeth Le",
+  "name": "Elizabeth Le's Portfolio",
+  "icons": [
+    {
+      "src": "small.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "large.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/home",
+  "display": "standalone",
+  "theme_color": "#fff",
+  "background_color": "#ffffff"
+}
