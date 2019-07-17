@@ -109,7 +109,7 @@ export default class Projects extends React.Component {
                 </a>{" "}
                 |{" "}
                 <a
-                  href="hhttps://flatiron-ware-game.herokuapp.com/"
+                  href="https://flatiron-ware-game.herokuapp.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
