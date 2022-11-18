@@ -8,7 +8,7 @@
     "react-dom": "^16.8.6",
     "react-mail-form": "^1.0.3",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.0",
+    "react-scripts": "5.0.1",
     "react-sparkle": "^1.0.4",
     "react-spring": "^8.0.19",
     "react-typist": "^2.0.5",
